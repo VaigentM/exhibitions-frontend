@@ -1,12 +1,18 @@
 @import "src/Styles/variables.sass"
 
 .search-bar-wrapper
+	display: flex
+	align-items: center
+	gap: 25px
+
+	@media screen and (max-width: 420px)
+		gap: 15px
+
 	input
 		outline: none
 		padding: 8px 16px
 		font-size: 16px
 		border-radius: 15px
-		margin-right: 25px
 		transition: all .3s ease
 
 		&:focus
@@ -24,3 +30,7 @@
 
 		&:hover
 			transform: scale(1.1)
+
+		@media screen and (max-width: 420px)
+			padding: 8px
+			height: 35px

@@ -43,7 +43,7 @@ const ThematicList = () => {
     const createMock = () => {
 
         setIsMock(true);
-        setThematics(iThematicsMock.filter(thematic => thematic.name.toLowerCase().includes(query)))
+        setThematics(iThematicsMock.filter(thematic => thematic.name.toLowerCase().includes(query.toLowerCase())))
 
     }
 

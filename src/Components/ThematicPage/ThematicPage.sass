@@ -5,9 +5,15 @@
 	width: 100%
 	background: #fff
 	border-radius: 15px
-	padding: 20px
 	position: relative
 	box-shadow: 0 4px 30px -10px rgba(0, 0, 0, 0.2)
+	padding: 20px 20px 75px
+
+	@media screen and (max-width: 700px)
+		flex-direction: column
+
+	@media screen and (max-width: 420px)
+		border-radius: 0
 
 	.return-link
 		position: absolute
@@ -23,6 +29,10 @@
 
 	.left
 		margin-right: 25px
+		min-width: 300px
+
+		@media screen and (max-width: 700px)
+			margin-right: 0
 
 		img
 			width: 300px
@@ -30,7 +40,6 @@
 			border-radius: 15px
 
 	.right
-		width: calc(100% - 650px)
 
 		.info-container
 			display: flex

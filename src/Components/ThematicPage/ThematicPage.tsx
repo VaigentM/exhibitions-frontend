@@ -69,11 +69,11 @@ const ThematicPage = ({ selectedThematic, setSelectedThematic }: { selectedThema
 
                 <div className="info-container">
 
-                    <h2 className="name">{selectedThematic?.name}</h2>
+                    <h2>{selectedThematic?.name}</h2>
 
                     <br />
 
-                    <span className="description">{selectedThematic?.description}</span>
+                    <span>{selectedThematic?.description}</span>
 
                 </div>
 
